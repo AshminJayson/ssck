@@ -1,3 +1,5 @@
+import { Navbar } from "@/ui/navbar"
+
 import "./globals.css"
 
 import { Dancing_Script } from "next/font/google"
@@ -17,9 +19,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const nav = () => {}
   return (
     <html lang="en">
-      <body className={dancingScript.className}>{children}</body>
+      <body className={dancingScript.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }

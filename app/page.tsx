@@ -1,15 +1,12 @@
-import Image from "next/image"
 import { Church } from "@/ui/church"
 import { Dignified } from "@/ui/dignified"
 import { Footer } from "@/ui/footer"
 import { Hero } from "@/ui/hero"
 import { MassTimings } from "@/ui/masstimings"
-import { Navbar } from "@/ui/navbar"
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <Navbar />
       <Hero />
       <div className="h-screen"></div>
       <MassTimings />
