@@ -24,7 +24,7 @@ export function Church() {
       <div className="absolute top-0 flex h-full w-screen flex-col justify-center gap-8 bg-black bg-opacity-40 p-10 text-white lg:justify-end">
         <p className="text-3xl lg:text-6xl">Our Church</p>
         <p className="w-1/2 text-2xl">
-          Blessed by the Rev Bishop on the 8th of March 1983. Our Parish began
+          Blessed by the Rev Bishop on the 8th of March 1970. Our Parish began
           construction soon after, the church of today has undergone various
           construction project those which have added to it’s beauty and it’s
           purpose as a center of praise and worship

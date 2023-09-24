@@ -4,19 +4,16 @@ export function Dignified() {
   return (
     <div className="relative flex h-96 w-full">
       <div className="relative w-1/2">
-        <Image
-          src="/assets/churchfront.jpg"
-          width={0}
-          height={0}
-          // sizes="100vw"
-          // style={{ width: "100%", height: "100%" }}
-          layout="fill"
-          alt="church-image"
-        />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ZGpAHE1RlQk?si=LFVbXRrIAiX_s86e&autoplay=1&mute=1"
+          title="SSCK Jubilee Song"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          className="h-full w-full"
+        ></iframe>
       </div>
-      <div className="absolute top-0 h-full w-full bg-black bg-opacity-40">
-        <p>Our Vicar</p>
-      </div>
+      {/* <div className="absolute top-0 h-full w-full bg-black bg-opacity-40"></div> */}
       <div className="relative w-1/2 text-white">
         <div className="relative z-0 h-full w-full">
           <Image

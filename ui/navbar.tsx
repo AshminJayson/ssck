@@ -27,6 +27,10 @@ export function Navbar() {
           height={100}
         />
       </Link>
+      <p className="text-2xl  font-bold">
+        <span className="text-primary">1949</span> -{" "}
+        <span className="text-secondary">2024</span> | Diamond Jubilee Year
+      </p>
       <NavigationMenu>
         <NavigationMenuList className="mx-10 flex items-center gap-8 text-2xl">
           <NavigationMenuItem>
@@ -42,7 +46,7 @@ export function Navbar() {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          {/* <NavigationMenuItem>
             <Link href="/blogs" legacyBehavior passHref>
               <NavigationMenuLink
                 className={
@@ -54,7 +58,7 @@ export function Navbar() {
                 Blogs
               </NavigationMenuLink>
             </Link>
-          </NavigationMenuItem>
+          </NavigationMenuItem> */}
         </NavigationMenuList>
       </NavigationMenu>
     </div>

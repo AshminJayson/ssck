@@ -7,7 +7,7 @@ export function MassTimings() {
         </div>
         <div className="flex flex-col gap-2 text-3xl font-bold text-white">
           <p>Sundays: 7:15 am and 10:15 am</p>
-          <p>Weekday: 7:15 am</p>
+          <p>Weekdays: 7:45 am</p>
         </div>
       </div>
       <p className="text-2xl font-bold italic">

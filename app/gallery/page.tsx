@@ -8,14 +8,31 @@ import {
   AccordionTrigger,
 } from "@radix-ui/react-accordion"
 
-function ImageCard() {
-  return <Image src="" width={100} height={100} alt="something"></Image>
+function ImageCard({ src }: { src: string }) {
+  return <Image src={src} width={200} height={200} alt="alternate"></Image>
 }
+
+const images2023: any[] = [
+  "/assets/2023/1.jpg",
+  "/assets/2023/2.jpg",
+  "/assets/2023/3.jpg",
+  "/assets/2023/4.jpg",
+  "/assets/2023/5.jpg",
+  "/assets/2023/6.jpg",
+  "/assets/2023/7.jpg",
+  "/assets/2023/8.jpg",
+  "/assets/2023/9.jpg",
+  "/assets/2023/10.jpg",
+  "/assets/2023/11.jpg",
+  "/assets/2023/12.jpg",
+]
 
 function Album() {
   return (
     <div className="flex w-full flex-wrap items-center justify-center gap-4 p-5">
-      <ImageCard />
+      {images2023.map((imagesrc: string, idx) => (
+        <ImageCard src={imagesrc} />
+      ))}
     </div>
   )
 }
@@ -42,9 +59,7 @@ export default function Gallery() {
           <AccordionTrigger className="w-full cursor-pointer text-white">
             2022
           </AccordionTrigger>
-          <AccordionContent>
-            <Album />
-          </AccordionContent>
+          <AccordionContent>{/* <Album /> */}</AccordionContent>
         </AccordionItem>
         <AccordionItem
           value="item-3"
@@ -53,9 +68,7 @@ export default function Gallery() {
           <AccordionTrigger className="w-full cursor-pointer text-white">
             2021
           </AccordionTrigger>
-          <AccordionContent>
-            <Album />
-          </AccordionContent>
+          <AccordionContent>{/* <Album /> */}</AccordionContent>
         </AccordionItem>
       </Accordion>
     </div>
