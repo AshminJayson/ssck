@@ -7,7 +7,7 @@ export function Hero() {
         priority
         src="/assets/heroimage.jpg"
         className="object-cover object-center"
-        layout="fill"
+        fill
         alt="hero-bg-image"
       />
       <div className="absolute flex h-full w-screen flex-col justify-end bg-black bg-opacity-40 p-8 py-12 md:p-10">
