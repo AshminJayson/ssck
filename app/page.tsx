@@ -10,6 +10,12 @@ export default function Home() {
     <main className="flex min-h-screen flex-col">
       <Hero />
       <div className="h-screen"></div>
+      <iframe
+        src="https://www.youtube.com/embed/7_u9hjiCgx8?si=z8RBD8ra3blAvpDH&autoplay=1&mute=1"
+        title="SSCK Walkathon"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        className="h-96 w-full"
+      />
       <MassTimings />
       <Church />
       <div className="flex flex-col items-center justify-center bg-primary p-8 text-2xl text-white md:text-3xl">
