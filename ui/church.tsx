@@ -16,6 +16,7 @@ export function Church() {
         src="/assets/churchfront.jpg"
         objectFit="cover"
         fill
+        objectPosition="left bottom"
         alt="church-image"
       />
       <div className="absolute top-0 flex h-full w-screen flex-col justify-center gap-8 bg-black bg-opacity-40 p-10 text-white lg:justify-end">
