@@ -4,15 +4,13 @@ export function Hero() {
   return (
     <div className="absolute top-0 h-screen w-screen">
       <Image
+        priority
         src="/assets/heroimage.jpg"
-        width={0}
-        height={0}
-        // sizes="100vw"
-        // style={{ width: "100%", height: "100%" }}
-        layout="fill"
+        className="object-cover object-center"
+        fill
         alt="hero-bg-image"
-      ></Image>
-      <div className="absolute top-0 flex h-full w-screen flex-col justify-center bg-black bg-opacity-40 p-10 lg:justify-end">
+      />
+      <div className="absolute flex h-full w-screen flex-col justify-end bg-black bg-opacity-40 p-8 py-12 md:p-10">
         <p className="text-4xl text-white lg:text-8xl">
           The Lord is my <span className="text-primary">shepherd,</span>
         </p>

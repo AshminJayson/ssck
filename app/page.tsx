@@ -3,6 +3,7 @@ import { Dignified } from "@/ui/dignified"
 import { Footer } from "@/ui/footer"
 import { Hero } from "@/ui/hero"
 import { MassTimings } from "@/ui/masstimings"
+import { Navbar } from "@/ui/navbar"
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <div className="h-screen"></div>
       <MassTimings />
       <Church />
-      <div className="flex h-36 flex-col items-center justify-center bg-primary text-3xl text-white">
+      <div className="flex flex-col items-center justify-center bg-primary p-8 text-2xl text-white md:text-3xl">
         <p>In that little host is the solution to all problems of the world</p>
         <p>- St. John Paul II</p>
       </div>

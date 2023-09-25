@@ -9,10 +9,19 @@ import {
 } from "@radix-ui/react-accordion"
 
 function ImageCard({ src }: { src: string }) {
-  return <Image src={src} width={200} height={200} alt="alternate"></Image>
+  return (
+    <Image
+      priority
+      src={src}
+      width={400}
+      height={400}
+      className="rounded-lg"
+      alt="alternate"
+    />
+  )
 }
 
-const images2023: any[] = [
+const images2023: string[] = [
   "/assets/2023/1.jpg",
   "/assets/2023/2.jpg",
   "/assets/2023/3.jpg",
@@ -29,9 +38,9 @@ const images2023: any[] = [
 
 function Album() {
   return (
-    <div className="flex w-full flex-wrap items-center justify-center gap-4 p-5">
+    <div className="columns-1 space-y-4 pt-4 sm:columns-2 md:columns-3 lg:columns-4">
       {images2023.map((imagesrc: string, idx) => (
-        <ImageCard src={imagesrc} />
+        <ImageCard src={imagesrc} key={idx} />
       ))}
     </div>
   )
@@ -39,7 +48,7 @@ function Album() {
 
 export default function Gallery() {
   return (
-    <div className="w-full px-10 pt-40 text-2xl">
+    <div className="w-full px-4 pt-40 text-2xl">
       <Accordion type="single" collapsible className="flex flex-col gap-4">
         <AccordionItem
           value="item-1"
