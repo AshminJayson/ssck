@@ -14,11 +14,8 @@ export function Church() {
     >
       <Image
         src="/assets/churchfront.jpg"
-        width={0}
-        height={0}
-        // sizes="100vw"
-        // style={{ width: "100%", height: "100%" }}
-        layout="fill"
+        objectFit="cover"
+        fill
         alt="church-image"
       />
       <div className="absolute top-0 flex h-full w-screen flex-col justify-center gap-8 bg-black bg-opacity-40 p-10 text-white lg:justify-end">
