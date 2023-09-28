@@ -10,17 +10,18 @@ export function Church() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      className="relative h-[calc(100vh-100px)] w-full"
     >
-      <Image
-        src="/assets/churchfront.jpg"
-        fill
-        className="object-cover object-right md:object-center"
-        alt="church-image"
-      />
-      <div className="absolute right-0 top-0 flex h-full w-screen flex-col items-center justify-center gap-8 bg-black/40 p-10  text-white md:items-start">
+      <motion.div className="relative h-[50vh] w-full md:h-[80vh]">
+        <Image
+          src="/assets/churchfront.jpg"
+          fill
+          className="object-cover object-right"
+          alt="church-image"
+        />
+      </motion.div>
+      <div className="flex w-screen flex-col items-center justify-center gap-8 bg-secondary p-10 text-white md:items-start">
         <p className="text-3xl lg:text-6xl">Our Church</p>
-        <p className="w-1/2 text-xl md:text-2xl">
+        <p className="w-full text-xl md:w-1/2 md:text-2xl">
           Blessed by the Rev Bishop on the 8th of March 1970. Our Parish began
           construction soon after, the church of today has undergone various
           construction project those which have added to it’s beauty and it’s
