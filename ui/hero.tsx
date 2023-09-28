@@ -2,22 +2,25 @@ import Image from "next/image"
 
 export function Hero() {
   return (
-    <div className="absolute top-0 h-screen w-screen">
-      <Image
-        priority
-        src="/assets/heroimage.jpg"
-        className="object-cover object-center"
-        fill
-        alt="hero-bg-image"
-      />
-      <div className="absolute flex h-full w-screen flex-col justify-end bg-black bg-opacity-40 p-8 py-12 md:p-10">
-        <p className="text-4xl text-white lg:text-8xl">
-          The Lord is my <span className="text-primary">shepherd,</span>
-        </p>
-        <p className="text-4xl text-white lg:text-8xl">
-          I shall not <span className="text-secondary">want</span>
-        </p>
+    <>
+      <div className="absolute top-0 h-[40rem] w-screen lg:h-screen">
+        <Image
+          priority
+          src="/assets/heroimage.jpg"
+          className="object-cover object-center"
+          fill
+          alt="hero-bg-image"
+        />
+        <div className="absolute flex h-full w-screen flex-col justify-end bg-black bg-opacity-40 p-8 py-12 md:p-10">
+          <p className="text-4xl text-white lg:text-8xl">
+            The Lord is my <span className="text-primary">shepherd,</span>
+          </p>
+          <p className="text-4xl text-white lg:text-8xl">
+            I shall not <span className="text-secondary">want</span>
+          </p>
+        </div>
       </div>
-    </div>
+      <div className="h-[40rem] lg:h-screen"></div>
+    </>
   )
 }

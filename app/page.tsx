@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <Hero />
-      <div className="h-screen"></div>
       <iframe
         src="https://www.youtube.com/embed/7_u9hjiCgx8?si=z8RBD8ra3blAvpDH&autoplay=1&mute=1"
         title="SSCK Walkathon"

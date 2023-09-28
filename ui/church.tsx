@@ -15,10 +15,10 @@ export function Church() {
       <Image
         src="/assets/churchfront.jpg"
         fill
-        className="object-cover object-center"
+        className="object-cover object-right md:object-center"
         alt="church-image"
       />
-      <div className="absolute top-0 flex h-full w-screen flex-col justify-center gap-8 bg-black bg-opacity-40 p-10 text-white lg:justify-end">
+      <div className="absolute right-0 top-0 flex h-full w-screen flex-col items-center justify-center gap-8 bg-black/40 p-10  text-white md:items-start">
         <p className="text-3xl lg:text-6xl">Our Church</p>
         <p className="w-1/2 text-xl md:text-2xl">
           Blessed by the Rev Bishop on the 8th of March 1970. Our Parish began
