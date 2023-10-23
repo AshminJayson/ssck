@@ -59,6 +59,7 @@ const imagesLaFamilia: string[] = [
   "/assets/lafamilia/LaFamilia (10).jpg",
   "/assets/lafamilia/LaFamilia (11).jpg",
   "/assets/lafamilia/LaFamilia (12).jpg",
+  "/assets/lafamilia/LaFamilia (13).jpg",
 ]
 
 function AlbumLaFamilia() {
@@ -80,10 +81,10 @@ export default function Gallery() {
           className="rounded-lg bg-gradient-to-r from-secondary  to-primary p-4"
         >
           <AccordionTrigger className="w-full cursor-pointer text-white">
-            2023
+            La Familia
           </AccordionTrigger>
           <AccordionContent>
-            <Album2023 />
+            <AlbumLaFamilia />
           </AccordionContent>
         </AccordionItem>
         <AccordionItem
@@ -91,10 +92,10 @@ export default function Gallery() {
           className="rounded-lg bg-gradient-to-r from-secondary  to-primary p-4"
         >
           <AccordionTrigger className="w-full cursor-pointer text-white">
-            La Familia
+            2023
           </AccordionTrigger>
           <AccordionContent>
-            <AlbumLaFamilia />
+            <Album2023 />
           </AccordionContent>
         </AccordionItem>
         <AccordionItem
