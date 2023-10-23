@@ -36,10 +36,35 @@ const images2023: string[] = [
   "/assets/2023/12.jpg",
 ]
 
-function Album() {
+function Album2023() {
   return (
     <div className="columns-1 space-y-4 pt-4 sm:columns-2 md:columns-3 lg:columns-4">
       {images2023.map((imagesrc: string, idx) => (
+        <ImageCard src={imagesrc} key={idx} />
+      ))}
+    </div>
+  )
+}
+
+const imagesLaFamilia: string[] = [
+  "/assets/lafamilia/LaFamilia (1).jpg",
+  "/assets/lafamilia/LaFamilia (2).jpg",
+  "/assets/lafamilia/LaFamilia (3).jpg",
+  "/assets/lafamilia/LaFamilia (4).jpg",
+  "/assets/lafamilia/LaFamilia (5).jpg",
+  "/assets/lafamilia/LaFamilia (6).jpg",
+  "/assets/lafamilia/LaFamilia (7).jpg",
+  "/assets/lafamilia/LaFamilia (8).jpg",
+  "/assets/lafamilia/LaFamilia (9).jpg",
+  "/assets/lafamilia/LaFamilia (10).jpg",
+  "/assets/lafamilia/LaFamilia (11).jpg",
+  "/assets/lafamilia/LaFamilia (12).jpg",
+]
+
+function AlbumLaFamilia() {
+  return (
+    <div className="columns-1 space-y-4 pt-4 sm:columns-2 md:columns-3 lg:columns-4">
+      {imagesLaFamilia.map((imagesrc: string, idx) => (
         <ImageCard src={imagesrc} key={idx} />
       ))}
     </div>
@@ -58,7 +83,7 @@ export default function Gallery() {
             2023
           </AccordionTrigger>
           <AccordionContent>
-            <Album />
+            <Album2023 />
           </AccordionContent>
         </AccordionItem>
         <AccordionItem
@@ -66,9 +91,11 @@ export default function Gallery() {
           className="rounded-lg bg-gradient-to-r from-secondary  to-primary p-4"
         >
           <AccordionTrigger className="w-full cursor-pointer text-white">
-            2022
+            La Familia
           </AccordionTrigger>
-          <AccordionContent>{/* <Album /> */}</AccordionContent>
+          <AccordionContent>
+            <AlbumLaFamilia />
+          </AccordionContent>
         </AccordionItem>
         <AccordionItem
           value="item-3"
