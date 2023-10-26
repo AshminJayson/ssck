@@ -64,6 +64,7 @@ const imagesLaFamilia: string[] = [
   "/assets/lafamilia/LaFamilia (15).jpg",
   "/assets/lafamilia/LaFamilia (16).jpg",
   "/assets/lafamilia/LaFamilia (17).jpg",
+  "/assets/lafamilia/LaFamilia (18).jpg",
 ]
 
 function AlbumLaFamilia() {
