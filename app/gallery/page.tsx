@@ -1,5 +1,7 @@
 "use client"
 
+import fs from "fs"
+import path from "path"
 import Image from "next/image"
 import {
   Accordion,
@@ -65,7 +67,18 @@ const imagesLaFamilia: string[] = [
   "/assets/lafamilia/LaFamilia (16).jpg",
   "/assets/lafamilia/LaFamilia (17).jpg",
   "/assets/lafamilia/LaFamilia (18).jpg",
+  "/assets/lafamilia/LaFamilia (19).jpg",
 ]
+
+// function getImagesFromPublicFolder() {
+//   const publicDirectory = path.join(process.cwd(), "public")
+//   const imageExtensions = [".jpg", ".jpeg", ".png", ".gif", ".webp"] // Add more extensions if needed
+
+//   const imageFiles = fs.readdirSync(publicDirectory).filter((file) => {
+//     const extname = path.extname(file).toLowerCase()
+//     return imageExtensions.includes(extname)
+//   })
+// }
 
 function AlbumLaFamilia() {
   return (
