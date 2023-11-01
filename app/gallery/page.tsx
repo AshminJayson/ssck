@@ -68,6 +68,7 @@ const imagesLaFamilia: string[] = [
   "/assets/lafamilia/LaFamilia (17).jpg",
   "/assets/lafamilia/LaFamilia (18).jpg",
   "/assets/lafamilia/LaFamilia (19).jpg",
+  "/assets/lafamilia/LaFamilia (20).jpg",
 ]
 
 // function getImagesFromPublicFolder() {
