@@ -2,6 +2,7 @@
 
 import { once } from "events"
 import Image from "next/image"
+import Link from "next/link"
 import { motion } from "framer-motion"
 
 export function Church() {
@@ -27,6 +28,12 @@ export function Church() {
           construction project those which have added to it’s beauty and it’s
           purpose as a center of praise and worship
         </p>
+        <Link
+          className="rounded-full bg-primary px-4 py-2 text-lg"
+          href={"/directory"}
+        >
+          Parish Directory
+        </Link>
       </div>
     </motion.div>
   )
