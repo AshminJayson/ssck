@@ -3,12 +3,13 @@ import { Dignified } from "@/ui/dignified"
 import { Footer } from "@/ui/footer"
 import { Hero } from "@/ui/hero"
 import { MassTimings } from "@/ui/masstimings"
-import { Navbar } from "@/ui/navbar"
+import { Poster } from "@/ui/poster"
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <Hero />
+      <Poster />
       <iframe
         src="https://www.youtube.com/embed/7_u9hjiCgx8?si=z8RBD8ra3blAvpDH&autoplay=1&mute=1"
         title="SSCK Walkathon"
