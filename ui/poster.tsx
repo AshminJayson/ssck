@@ -19,15 +19,13 @@ export function Poster() {
   return (
     <Carousel className="w-full">
       <CarouselContent className="m-10 h-full">
-        {images.map((image, index) => (
-          <CarouselItem key={index}>
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-5">
-                  <img src={image} alt="poster" className="h-full" />
-                </CardContent>
-              </Card>
-            </div>
+        {images.map((image) => (
+          <CarouselItem key={image}>
+            <img src={image} alt="Thirunal" className="w-full" />
+            {/* <Card className="h-full">
+              <CardContent>
+              </CardContent>
+            </Card> */}
           </CarouselItem>
         ))}
       </CarouselContent>
