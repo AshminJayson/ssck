@@ -92,15 +92,9 @@ const imagesLaFamilia: string[] = [
   "/assets/lafamilia/LaFamilia (41).jpg",
 ]
 
-// function getImagesFromPublicFolder() {
-//   const publicDirectory = path.join(process.cwd(), "public")
-//   const imageExtensions = [".jpg", ".jpeg", ".png", ".gif", ".webp"] // Add more extensions if needed
+const imagesJubileeDay1: string[] = []
 
-//   const imageFiles = fs.readdirSync(publicDirectory).filter((file) => {
-//     const extname = path.extname(file).toLowerCase()
-//     return imageExtensions.includes(extname)
-//   })
-// }
+const imagesJubileeDay2: string[] = []
 
 function AlbumLaFamilia() {
   return (
@@ -153,6 +147,36 @@ export default function Gallery() {
         >
           <AccordionTrigger className="w-full cursor-pointer text-white">
             2021
+          </AccordionTrigger>
+          <AccordionContent>{/* <Album /> */}</AccordionContent>
+        </AccordionItem>
+        <AccordionItem
+          value="item-5"
+          className="rounded-lg bg-gradient-to-r from-secondary  to-primary p-4"
+        >
+          <AccordionTrigger
+            className="w-full cursor-pointer text-white"
+            onClick={() => {
+              window.location.href =
+                "https://drive.google.com/drive/folders/13kgrX72x48J9NzDpe6LWpob1KZn1qvaq?usp=drive_link"
+            }}
+          >
+            Jubilee Day 2
+          </AccordionTrigger>
+          <AccordionContent>{/* <Album /> */}</AccordionContent>
+        </AccordionItem>
+        <AccordionItem
+          value="item-5"
+          className="rounded-lg bg-gradient-to-r from-secondary  to-primary p-4"
+        >
+          <AccordionTrigger
+            className="w-full cursor-pointer text-white"
+            onClick={() => {
+              window.location.href =
+                "https://drive.google.com/drive/folders/1ryNS3yxVwLgeNZ82Bt-Q9zl4Zbr8AW37?usp=drive_link"
+            }}
+          >
+            Jubilee Day 2
           </AccordionTrigger>
           <AccordionContent>{/* <Album /> */}</AccordionContent>
         </AccordionItem>
