@@ -176,7 +176,7 @@ export default function Gallery() {
                 "https://drive.google.com/drive/folders/1ryNS3yxVwLgeNZ82Bt-Q9zl4Zbr8AW37?usp=drive_link"
             }}
           >
-            Jubilee Day 2
+            Jubilee Day 3
           </AccordionTrigger>
           <AccordionContent>{/* <Album /> */}</AccordionContent>
         </AccordionItem>
