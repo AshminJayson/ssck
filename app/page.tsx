@@ -9,12 +9,12 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <Hero />
-      <Poster />
+      {/* <Poster /> */}
       <iframe
-        src="https://www.youtube.com/embed/7_u9hjiCgx8?si=z8RBD8ra3blAvpDH&autoplay=1&mute=1"
+        src="https://www.youtube.com/embed/G3FC4X_7HSU?si=jkwoKLZIZFdm5esf&autoplay=1&mute=1"
         title="SSCK Walkathon"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        className="h-96 w-full"
+        className="h-[90vh] w-full"
       />
       <MassTimings />
       <Church />
